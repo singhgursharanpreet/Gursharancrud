@@ -1,0 +1,124 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background-color: #0a7ef2;
+    color: #333;
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  .card {
+    padding: 2em;
+    margin: 1.5em 0;
+    background-color: #0c0101;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .read-the-docs {
+    color: #888;
+  }
+  h2 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    color: #e70404;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 0.75rem;
+    color: #a51e44;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Main container for side-by-side layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Left side - links */
+  .navmenu {
+    width: 20%; /* Adjust width as needed */
+    background-color: #040400;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .navmenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .navmenu li {
+    list-style: none;
+  }
+  
+  .navmenu a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navmenu a:hover {
+    color: #0056b3;
+  }
+  
+  /* Right side - content */
+  .content {
+    width: 75%; /* Adjust width as needed */
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Right-side content styling */
+.right-content {
+    width: 65%; /* Adjust width as necessary */
+    margin-left: 1rem; /* Adds space between boxes */
+    padding: 1rem;
+    background-color: #fff; /* White background */
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
